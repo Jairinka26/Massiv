@@ -5,10 +5,19 @@ public class Main {
     }
 
     public static void init(){
+        Generator g = new Generator();
         Massiv m=new Massiv();
-        m.min(m.generate());
-        m.max(m.generate());
-        m.min_i(m.generate());
+        int gm[]=g.generator();
+
+        int i;
+        for (i=0; i< gm.length; i++ ){
+            System.out.print(gm[i]+" ");
+        }
+        System.out.println();
+
+        m.min(gm);
+        m.max(gm);
+        m.min_i(gm);
 
     }
 }
