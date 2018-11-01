@@ -4,20 +4,20 @@ public class Main {
         init();
     }
 
-    public static void init(){
-        Generator g = new Generator();
+    static void init(){
         Massiv m=new Massiv();
-        int gm[]=g.generator();
+        int m1[] = m.generate();
+        m.min(m1);
+        m.max(m1);
+        m.min_i(m1);
+        m.max_i(m1);
+        m.sum(m1);
+        m.sum(m.revers(m1));
+        m.move(m1);
+        m.bubble(m1);
+        m.select(m1);
+        m.past(m1);
 
-        int i;
-        for (i=0; i< gm.length; i++ ){
-            System.out.print(gm[i]+" ");
-        }
-        System.out.println();
-
-        m.min(gm);
-        m.max(gm);
-        m.min_i(gm);
 
     }
 }
