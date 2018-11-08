@@ -144,9 +144,7 @@ HashMap<String, Integer> setNumber = new HashMap<String, Integer>();
             words.add(i, word);
             i++;
         }
-
         findNumber(words);
-
     }
 
     void findNumber(ArrayList words) {
@@ -156,6 +154,19 @@ HashMap<String, Integer> setNumber = new HashMap<String, Integer>();
         }
         System.out.println(sum);
     }
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////                                             Part 4
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    void Part4(double x1, double y1, double x2, double y2){
+        double length;
+        length = Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
+        System.out.println(length);
+    }
+
 }
+
 
 

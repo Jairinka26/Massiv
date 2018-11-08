@@ -22,6 +22,7 @@ public class Main {
 //        l.Part1(2);
 //        l.Part2(5);
         l.Part3("шестьсот одинадцать");
+        l.Part4(1,1,1,1);
 
 
     }
